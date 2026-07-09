@@ -23,8 +23,9 @@ reviews:
   review_status: false             # was true — drop the noise
   abort_on_close: true             # NEW: stop in-flight review when PR closes/merges
 
+  # 2026-07-09: CR App scoped OFF this repo (Brynn-approved repo-scoping; pack-panel gates it — warden-memory code-build skill / BENCHMARK-REPORT.md)
   auto_review:
-    enabled: true
+    enabled: false
     drafts: false                  # don't burn reviews on draft PRs
     auto_incremental_review: true
     auto_pause_after_reviewed_commits: 1   # NEW — THE quota fix: pause incremental re-review after the first reviewed commit
